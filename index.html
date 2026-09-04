@@ -263,8 +263,8 @@
   .tooltip-wrap{ position:relative; display:inline-flex; align-items:center; cursor:help; }
 
   .tooltip-box{
-    position:absolute; bottom:calc(100% + 10px); left:50%;
-    transform:translateX(-50%) translateY(4px);
+    position:absolute; top:calc(100% + 10px); left:50%;
+    transform:translateX(-50%) translateY(-4px);
     width:240px;
     background:var(--panel-2);
     border:1px solid var(--line-strong);
@@ -282,10 +282,10 @@
   }
   .tooltip-box::after{
     content:'';
-    position:absolute; top:100%; left:50%;
+    position:absolute; bottom:100%; left:50%;
     transform:translateX(-50%);
     border:6px solid transparent;
-    border-top-color:var(--panel-2);
+    border-bottom-color:var(--panel-2);
   }
   .tooltip-wrap:hover .tooltip-box,
   .tooltip-wrap:focus-within .tooltip-box{
